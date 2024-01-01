@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+    }
+    body{
+        margin: 0px;
+        
+    }
+    nav{
+    margin-top: 10px;
+    background-color: rgb(244, 101, 149);
+    margin-top: 0px;
+    height: 50px;
+    width: 100vw;
+    position: relative;
+    top: 0px;
+    
+    
+   
+
+}
+
+ul{
+    list-style:none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin: 0px;
+    line-height: 50px;
+
+}
+.first{
+   
+    /* background-image: url(bowl.png);
+    background-size: cover; */
+    width:100vw;
+    display: flex;
+    background-color: rgb(250, 192, 212);;
+    height:100vh;
+    /* color: azure; */
+    opacity: 0.8;
+}
+
+.text h1{
+   font-size: 85px;
+    color: rgb(239, 134, 5); 
+   margin-top: 50px;
+   margin-bottom: 50px;
+   margin-left: 10px;
+    
+}
+.text h3{
+    
+    color:purple;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+   
+}
+.text{
+    width: 50vw;
+    
+}
+.img{
+    width: 50vw;
+}
+.img img{
+    background-color: rgb(250, 192, 212);
+    height: 90vh;
+    margin-top: 20px;
+    animation: ro infinite 2s ease-out;
+  
+   
+}
+@keyframes ro{
+    0%{
+        transform: rotate(2deg);
+    }
+    100%{
+        transform: rotate(-2deg);
+    }
+}
+.pic{
+    background-image: url(bowl.png);
+    height: 100vh;
+    width:100vw;
+    background-size: cover;
+    opacity: 0.8;
+    margin-top: 0px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.pic:hover{
+    opacity: 0.6;
+
+    
+    background-color: rgb(250, 192, 212);
+    transition: 1.5s ease-in-out;
+}
+a{
+    text-decoration: none;
+    color:black
+}
+.icon #move{
+    margin-left: 90%;
+    color: white;
+    font-size: 50px;
+    line-height: 100vh;
+}
+.part1{
+    background-color: white;
+    height: 50vh;
+    width: 20vw;
+    margin-left: 3%;
+    padding-top:20px;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+  
+  
+
+   
+}
+
+
+span{
+    font-weight: bold;
+}
+
+
+</style>
+
+
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a>Contact</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a>Brand</a></li>
+            <li><a>Order Now</a></li>
+
+        </ul>
+    </nav>
+    <div class="first">
+
+        <div class="text" data-aos="zoom-in-down">
+            <h1>RAINBOW ICECREAM PARLOUR</h1>
+            <h3>COLD MINDS CAN WORK BETTER! </h3>
+        </div>
+        <div class="img">
+            <img src="img3-removebg-preview.png">
+        </div>
+    </div>
+    <div class="pic">
+        <div data-aos="zoom-in-right" class="part1">
+            <h3>Hey Icecream lover!</h3><br>
+            <p><span>Welcome to our shop<br><br></span>
+            We are Rainbow Icecream Parlour.Rainbow means 7 colors, here you will get different colors of icecream with all good quality and taste.
+        We started this buisness to make people happy as ice cream brings joy to mind and heart.
+    Our icecream parlour is something you'll never gonna regret.
+Come and visit us and enjoy our rainbow icecreams.</p>
+
+        </div>
+
+    </div>
+    
+
+
+    <script>
+        
+
+    </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+            offset: 400,
+            duration: 700,
+        });
+      </script>
+</body>
+</html>

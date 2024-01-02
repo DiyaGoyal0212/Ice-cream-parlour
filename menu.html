@@ -44,19 +44,73 @@ a{
 .boxes{
     display: flex;
 }
+.side{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #e8e3e3;
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 0 10px black;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+}
+.side li{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.side li:hover{
+    background-color: #FCEDA2;
+}
+.side a{
+    width: 100%;
+}
+.hi{
+    display: none;
+
+}
+@media  screen and (max-width: 500px) {
+   
+    .bye{
+        display: none;
+    }
+    .hi{
+        display: block;
+        position: fixed;
+        top: 5px;
+        right: 10px;
+    }
+}
     
 </style>
 
 
 <body>
     <nav>
-        <ul>
+        <ul class="side">
+            <li onclick="hidebar()"><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a>Contact</a></li>
-            <li><a href="menu.html">Menu</a></li>
+            <li><a  href="menu.html" >Menu</a></li>
             <li><a>Brand</a></li>
             <li><a>Order Now</a></li>
+        
+        </ul>
+        <ul>
+            <li class="bye"><a href="index.html">Home</a></li>
+            <li class="bye"><a href="about.html">About</a></li>
+            <li class="bye"><a>Contact</a></li>
+            <li class="bye"><a  href="menu.html" >Menu</a></li>
+            <li class="bye"><a>Brand</a></li>
+            <li class="bye"><a>Order Now</a></li>
+            <li class="hi" onclick="myfun()"> <a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
 
         </ul>
     </nav>
@@ -68,6 +122,7 @@ a{
         <div class="1"></div>
         
     </div>
+    <script src="index.js"></script>
     
 </body>
 </html>

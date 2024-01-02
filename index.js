@@ -13,4 +13,16 @@ var myfunc2 = function( ){
 
 }
 
+var myfun = function showside(){
+    const side = document.querySelector('.side')
+    side.style.display = 'flex';
+  
+   
+}
+
+function hidebar(){
+    const side = document.querySelector('.side')
+    side.style.display = 'none';
+}
+
 

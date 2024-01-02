@@ -95,19 +95,57 @@ li:hover{
 .main .two :nth-child(1){
     background-color: #FCEDA2;
 }
+
 .main .two :nth-child(2){
     background-color: #ec6464;
 }
+.side{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #e8e3e3;
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 0 10px black;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+}
+.side li{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.side li:hover{
+    background-color: #FCEDA2;
+}
+.side a{
+    width: 100%;
+}
+.hi{
+    display: none;
+
+}
 @media  screen and (max-width: 500px) {
-    nav{
-        
-        
+   
+    .bye{
+        display: none;
     }
-    
+    .hi{
+        display: block;
+        position: fixed;
+        top: 5px;
+        right: 10px;
+    }
 }
 @media screen and (max-width: 600px){
     body{
         background-image: url("ice-cream_wide.jpg");
+        
     
     }
     .main h1{

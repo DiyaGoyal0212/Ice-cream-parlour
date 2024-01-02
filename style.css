@@ -98,3 +98,25 @@ li:hover{
 .main .two :nth-child(2){
     background-color: #ec6464;
 }
+@media  screen and (max-width: 500px) {
+    nav{
+        
+        
+    }
+    
+}
+@media screen and (max-width: 600px){
+    body{
+        background-image: url("ice-cream_wide.jpg");
+    
+    }
+    .main h1{
+        margin-top: 10px;
+    }
+    .main h3,button{
+        display: none;
+    }
+    a{
+        color:black;
+    }
+}

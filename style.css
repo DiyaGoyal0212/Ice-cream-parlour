@@ -99,6 +99,13 @@ li:hover{
 .main .two :nth-child(2){
     background-color: #ec6464;
 }
+.logo img{
+    position: fixed;
+    left:0px;
+    top:0px;
+    height: 50px;
+    width: 100px;
+}
 .side{
     position: fixed;
     top: 0;

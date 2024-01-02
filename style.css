@@ -114,8 +114,15 @@ li:hover{
         margin-top: 10vh;
         font-family: Abril Fatface;
     }
-    .main h3,button{
+    .main button{
         display: none;
+    }
+    .main h3{
+        color: black;
+        font-family: Abril Fatface;
+    }
+    .main h2{
+        font-family: Abril Fatface;
     }
     a{
         color:black;

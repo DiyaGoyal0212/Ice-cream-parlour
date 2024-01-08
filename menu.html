@@ -39,6 +39,7 @@ a{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .boxes{
     display: flex;
@@ -82,6 +83,110 @@ a{
     height: 50px;
     width: 100px;
 }
+.boxes{
+    display: flex;
+    justify-content: center;
+
+}
+.boxes p{
+    display: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.boxes .b1{
+    height: 300px;
+    width: 300px;
+    border: 2px black solid;
+    margin: 10px;
+    background-size: contain;
+}
+.mark{
+    display: flex;
+    justify-content: center;
+    color: rgb(244, 101, 149);
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.b1 img{
+    height: 300px;
+    width: 300px;
+}
+@media screen and (max-width: 1030px) {
+    .boxes .b1{
+        height: 250px;
+        width: 250px;
+    }
+    .b1 img{
+        height: 250px;
+        width: 250px;
+    }
+    
+}
+@media screen and (max-width: 830px) {
+    .boxes .b1{
+        height: 200px;
+        width: 200px;
+    }
+    .b1 img{
+        height: 200px;
+        width: 200px;
+    }
+    
+}
+@media  screen and (max-width: 700px) {
+    .boxes{
+        display: block;
+       
+      
+        
+    }
+    .boxes .b1{
+        border: 0px;
+    }
+
+    .boxes img{
+        margin-left: 30vw;
+      
+       
+    }
+    
+    .boxes p{
+        display: block;
+        text-align: center;
+        margin-top:20px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    
+}
+@media screen and (max-width: 400px) {
+    .boxes{
+        display: block;
+       
+      
+        
+    }
+    .boxes .b1{
+        border: 0px;
+    }
+
+    .boxes img{
+        margin-left: 25vw;
+      
+       
+    }
+    
+    .boxes p{
+        display: block;
+        text-align: center;
+        margin-top:20px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    
+}
+
+
+    
 
 @media  screen and (max-width: 500px) {
    
@@ -127,9 +232,30 @@ a{
         <h1>OUR MENU</h1>
     </div>
     <div class="boxes">
-        <div class="1"></div>
+        <div class="b1"><img src="kulfies.jpeg"></div>
+        <p>KULFIES</p>
+        
+        <div class="b1"><img src="sundae.jpeg"></div>
+        <p>SUNDAE</p>
+       
+        <div class="b1"><img src="sundaespin.jpeg"></div><p>SUNADE SPIN</p>
         
     </div>
+    <div class="boxes">
+        <div class="b1"><img src="dollies.jpeg"></div><p>DOLLIES</p>
+        <div class="b1"><img src="cakes.webp"></div><p>ICECREAM CAKES</p>
+        <div class="b1"><img src="tubs.jpeg"></div><p>ICECREAM TUBS</p>
+    </div>
+    <div class="boxes">
+        <div class="b1"><img src="naturl-kulfi.avif"></div><p>NATURAL KULFI</p>
+        <div class="b1"><img src="ice-trooper.webp"></div><p>ICE TROOPER</p>
+        <div class="b1"><img src="icecream-candy.jpeg"></div><p>ICECREAM CANDY</p>
+    </div>
+    <div class="mark">
+        <h3>@ Rainbow Icecream , 2024</h3>
+    </div>
+        
+  
     <script src="index.js"></script>
     
 </body>

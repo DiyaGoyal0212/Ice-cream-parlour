@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/92d7fc4876.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    #photo{
+        height: 100px;
+        width: 200px;
+        color: white;
+        margin-top: 40px;
+
+    }
+    #photo a{
+        text-decoration: none;
+        color:white;
+    }
+</style>
+<body>
+    <nav>
+        <h1><a href="index.html">RECIPE APP</a></h1>
+        <div class="it">
+           <a href="login.html"> <i class="fa-solid fa-user"></i></a>
+        <form>
+            <input type="text" placeholder="Search your food item" class="searchBox">
+            <button class="searchbtn"><a class="anchor" href="">Search</a></button>
+        </form>
+        </div>
+       
+    </nav>
+    <div class="recipe-box" id="blur">
+        <h1>FIND TASTE THAT SUITS YOU</h1>
+        <div class="breakfast">
+            <h1 class="text">BREAKFAST</h1>
+        
+            <div class="b1">
+                <div id="dosa" class="masala dosa"><img src="masala-dosa.jpeg" onclick="dosa()"><p>MASALA DOSA</p></div>
+            <div id="idli" class="idli-sambhar"><img src="idli_sambhar.jpg" onclick="idli()"><p>IDLI SAMBHAR</p></div>
+            <div id="poha" class="poha"><img src="Indori_Poha.jpg" onclick="poha()"><p>POHA</p></div>
+          <div id="toast" id="bread" class="savory-french-toast"><img src="french-toast.jpg" onclick="toast()"><p>SAVORY FRENCH TOAST</p></div>
+            </div>
+        </div>
+        <div class="lunch">
+            <h1 class="text">LUNCH</h1>
+            
+            <div class="b1">
+                <div id="paneer" class="paneer-lababdar"><img src="lababdar.jpeg" onclick="lababdar()"><p>PANEER LABABDAR</p></div>
+                <div  id="rajma" class="rajma"><img src="rajma.jpeg" onclick="rajma()"><p>RAJMA</p></div>
+                <div id="kadhi" class="kadhi"><img src="kadhi.webp" onclick="kadhi()"><p>KADHI</p></div>
+                <div id="mushroom" class="mushroom"><img src="tofu-and-mushroom-stir-fry.webp" onclick="mushroom()"><p>MUSHROOM</p></div>
+            </div>
+
+        </div>
+        <div class="dinner">
+            <h1 class="text">DINNER</h1>
+            <div class="b1">
+                <div id="tofu" id="masala" class="tofu-tikka-masala"><img src="tofu.jpeg" onclick="tofu()"><p>TOFU TIKKA MASALA</p></div>
+                <div id="dal makhani" class="dal-makhani"><img src="dal-makhni.jpeg " onclick="makhani()"><p>DAL MAKHANI</p></div>
+                <div id="bhindi" class="bhindi"><img src="bhindi.jpeg" onclick="bhindi()"><p>BHINDI</p></div>
+                <div id="aloo gobhi" class="aloo-gobhi"><IMG src="aloo_gobhi.jpeg" onclick="gobhi()"><p>ALOO GOBHI</p></div>
+            </div>
+            
+
+        </div>
+        <div class="snacks">
+            <h1 class="text">SNACKS</h1>
+           
+            <div id="snacks" class="b1">
+                <div id="burgir" class="burgir"><img src="burgir.jpeg" onclick="burgir()"><p>BURGIR</p></div>
+                <div id="sandwhich" class="sandwich"><img src="sandwhich.jpeg" onclick="sandwich()"><p>SANDWICH</p></div>
+                <div id="pizza" class="pizza"><img src="pizza.jpeg" onclick="pizza()"><p>PIZZA</p></div>
+                <div id="pasta" class="pasta"><img src="pasta.jpeg" onclick="pasta()"><p>PASTA</p></div>
+            </div>
+
+        </div>
+        <div id="dessert"  class="sweets">
+            <h1 class="text">SWEETS</h1>
+            <div  id="sweets" class="b1">
+                <div  id="gulab jamun" class="gulab-jamun"><img src="gulab-jamun.jpeg"o onclick="gulab()"><p>GULAB JAMUN</p></div>
+                <div id="rasgulla" class="rasgulla"><img src="rasgulla.jpeg" onclick="rasgulla()"><p>RASGULLA</p></div>
+                <div id="ras malai" class="ras-malai"><img src="rasmalai.jpeg" onclick="rasmalai()"><p>RASMALAI</p></div>
+                <div id="burfi" class="burfi"><img src="burfi.jpeg" onclick="burfi()"><p>BURFI</p></div>
+            </div>
+
+        </div>
+        <div class="cakes">
+            <h1 class="text">CAKES</h1>
+            <div class="b1">
+                <div id="cheese cake" class="cheese_cake"><img src="cheese-cake.jpeg" onclick="cheese()"><p>CHEESE CAKE</p></div>
+            <div id="cake" class="tiramisu"><img src="tiramisu.jpeg" onclick="tiramisu()"><p>TRISMASU</p></div>
+            <div id="cakes" class="tres-les-ches"><img src="tres.jpeg" onclick="toggl()"><p>TRES LES CHES</p></div>
+            <div id="red velvet" class="red-velvet"><img  src="red-velvet.jpeg" onclick="toggle()"><p>RED VELVET</p></div>
+           
+            </div>
+
+        </div>
+    </div>
+    <div id="popup">
+        <h1>RED VELVET</h1>
+       
+    <h3>Ingredients:</h3>
+<h5>For the cake:</h5>
+2 1/2 cups all-purpose flour
+1 1/2 cups granulated sugar
+1 teaspoon baking soda
+1 teaspoon salt
+1 teaspoon cocoa powder
+1 1/2 cups vegetable oil
+1 cup buttermilk, room temperature
+2 large eggs, room temperature
+2 tablespoons red food coloring
+1 teaspoon white distilled vinegar
+1 teaspoon vanilla extract
+For the cream cheese frosting:
+1 pound cream cheese, softened
+2 sticks unsalted butter, softened
+1 teaspoon vanilla extract
+4 cups sifted confectioners' sugar
+<h3>Instructions:</h3>
+<h4>For the cake:</h4>
+Preheat your oven to 350°F (175°C). Grease and flour two 9-inch round cake pans.
+In a medium bowl, sift together flour, sugar, baking soda, salt, and cocoa powder.
+In a large bowl, mix together oil, buttermilk, eggs, food coloring, vinegar, and vanilla extract until well combined.
+Gradually add the dry ingredients to the wet ingredients, mixing until smooth and well combined.
+Divide the batter evenly between the prepared cake pans.
+Bake in the preheated oven for 25-30 minutes, or until a toothpick inserted into the center comes out clean.
+Allow the cakes to cool in the pans for 10 minutes, then transfer them to wire racks to cool completely.
+For the cream cheese frosting:
+In a large bowl, beat together cream cheese, butter, and vanilla extract until smooth and creamy.
+Gradually add the confectioners' sugar, beating until light and fluffy.
+Once the cakes are completely cooled, place one layer on a serving plate.
+Spread a layer of frosting evenly over the top of the first layer.
+Place the second layer on top and frost the top and sides of the cake with the remaining frosting.
+<button class="searchbtn" onclick="toggle()">CLOSE</button>
+</div>
+
+<div id="popup2">
+    <h1>TRES LES CHES</h1>
+    <h3>Ingredients:</h3>
+<h4>For the cake:</h4>
+1 cup all-purpose flour
+1 1/2 teaspoons baking powder
+1/4 teaspoon salt
+5 large eggs, separated
+1 cup granulated sugar, divided
+1/3 cup whole milk
+1 teaspoon vanilla extract
+For the three milk mixture:
+1 can (14 ounces) sweetened condensed milk
+1 can (12 ounces) evaporated milk
+1 cup whole milk
+For the whipped cream topping:
+2 cups heavy cream
+1/4 cup powdered sugar
+1 teaspoon vanilla extract
+<h3>Instructions:</h3>
+<h4>For the cake:</h4>
+Preheat your oven to 350°F (175°C). Grease and flour a 9x13 inch baking dish.
+In a medium bowl, whisk together the flour, baking powder, and salt. Set aside.
+In a large mixing bowl, beat the egg yolks with 3/4 cup of sugar until light and fluffy.
+Stir in the milk and vanilla extract.
+Gradually add the flour mixture to the egg yolk mixture, mixing until well combined.
+In another clean mixing bowl, beat the egg whites until soft peaks form. Gradually add the remaining 1/4 cup of sugar and continue beating until stiff peaks form.
+Gently fold the beaten egg whites into the cake batter until just combined.
+Pour the batter into the prepared baking dish and spread it evenly.
+Bake in the preheated oven for 25-30 minutes, or until a toothpick inserted into the center comes out clean.
+Allow the cake to cool in the pan for about 10 minutes.
+For the three milk mixture:
+In a mixing bowl, whisk together the sweetened condensed milk, evaporated milk, and whole milk until well combined.
+While the cake is still warm, poke holes all over the surface using a fork or toothpick.
+Slowly pour the three milk mixture over the warm cake, making sure to evenly distribute it.
+Allow the cake to cool completely and then refrigerate for at least 1 hour, or overnight, to allow the milk mixture to soak into the cake.
+For the whipped cream topping:
+In a mixing bowl, beat the heavy cream, powdered sugar, and vanilla extract until stiff peaks form.
+Spread the whipped cream over the chilled cake.
+Optionally, you can garnish the cake with fresh fruit or a sprinkle of cinnamon.
+Slice and serve this delicious Tres Leches Cake cold. Enjoy!
+<button class="searchbtn" onclick="toggl()">CLOSE</button>
+</div>
+
+<div id="popup3">
+    <h1>TIRAMISU</h1>
+   <h3> Ingredients:</h3>
+6 large egg yolks
+3/4 cup granulated sugar
+1 cup mascarpone cheese, softened
+1 1/2 cups heavy cream
+2 cups strong brewed coffee or espresso, cooled to room temperature
+1/4 cup coffee liqueur (such as Kahlua), optional
+1 teaspoon vanilla extract
+24-30 ladyfingers (savoiardi biscuits)
+Cocoa powder, for dusting
+Dark chocolate shavings, for garnish
+<h3>Instructions:</h3>
+In a heatproof bowl, whisk together the egg yolks and sugar until well combined.
+Place the bowl over a pot of simmering water (double boiler) and whisk continuously until the mixture thickens and becomes pale yellow, about 5-7 minutes.
+Remove the bowl from heat and let it cool slightly.
+Add the mascarpone cheese to the egg yolk mixture and whisk until smooth and well combined. Set aside.
+In a separate bowl, whip the heavy cream until stiff peaks form.
+Gently fold the whipped cream into the mascarpone mixture until smooth. Set aside.
+In a shallow dish, combine the cooled coffee/espresso and coffee liqueur (if using).
+Dip each ladyfinger into the coffee mixture briefly, making sure not to soak them too much as they can become too soggy.
+Arrange a layer of dipped ladyfingers in the bottom of a 9x13 inch dish or a similar-sized serving dish.
+Spread half of the mascarpone mixture over the ladyfingers, smoothing it out into an even layer.
+Repeat the layers with another layer of dipped ladyfingers and the remaining mascarpone mixture.
+Cover the dish with plastic wrap and refrigerate for at least 4 hours, or preferably overnight, to allow the flavors to meld and the tiramisu to set.
+Before serving, dust the top of the tiramisu with cocoa powder and garnish with chocolate shavings.
+Slice and serve chilled.
+Enjoy this decadent and indulgent Tiramisu with friends and family!
+<button class="searchbtn" onclick="tiramisu()">CLOSE</button>
+</div>
+<div id="popup4">
+    <h1>CHEESE CAKE</h1>
+   <h3> Ingredients:</h3>
+<h4>For the crust:</h4>
+1 1/2 cups graham cracker crumbs (about 12 whole graham crackers)
+1/4 cup granulated sugar
+6 tablespoons unsalted butter, melted
+For the filling:
+4 packages (8 ounces each) cream cheese, softened
+1 1/4 cups granulated sugar
+4 large eggs
+1 tablespoon lemon juice
+1 teaspoon vanilla extract
+1 cup sour cream
+1/4 cup all-purpose flour
+<h3>Instructions:</h3>
+<h4>For the crust:</h4>
+Preheat your oven to 325°F (160°C). Grease a 9-inch springform pan.
+In a mixing bowl, combine the graham cracker crumbs, sugar, and melted butter. Mix until the crumbs are evenly coated.
+Press the crumb mixture into the bottom of the prepared springform pan, using the bottom of a glass or measuring cup to pack it down firmly.
+Bake the crust in the preheated oven for 10 minutes. Remove from the oven and set aside to cool.
+For the filling:
+In a large mixing bowl, beat the cream cheese and sugar together until smooth and creamy.
+Add the eggs one at a time, beating well after each addition.
+Mix in the lemon juice and vanilla extract.
+Add the sour cream and flour, and beat until well combined and smooth.
+Pour the filling over the cooled crust in the springform pan.
+Tap the pan gently on the counter to release any air bubbles.
+Bake the cheesecake in the preheated oven for 55-60 minutes, or until the edges are set and the center is slightly jiggly.
+Turn off the oven and leave the cheesecake inside with the door closed for 1 hour to cool gradually.
+Remove the cheesecake from the oven and run a knife around the edge of the pan to loosen the cheesecake from the sides.
+Refrigerate the cheesecake for at least 4 hours, or preferably overnight, to chill and set completely.
+<h3>Optional topping:</h3>
+Serve the cheesecake plain or with your favorite toppings such as fresh berries, fruit compote, whipped cream, or chocolate sauce.
+Slice and enjoy this creamy and indulgent New York-style cheesecake!
+ <button class="searchbtn" onclick="cheese()">CLOSE</button>
+
+</div>
+<div id="popup5">
+    <h1>BURFI</h1>
+   <h3> Ingredients:</h3>
+
+2 cups full-fat milk powder
+1 cup condensed milk
+1/4 cup ghee (clarified butter)
+1/4 cup chopped nuts (such as almonds, cashews, or pistachios)
+1/4 teaspoon cardamom powder
+Saffron strands (optional, for garnish)
+<h3>Instructions:</h3>
+
+Heat a non-stick pan on medium heat and add the ghee to it.
+
+Once the ghee melts, add the condensed milk and mix well.
+
+Now, gradually add the milk powder while stirring continuously to avoid lumps.
+
+Keep stirring the mixture on medium heat until it thickens and starts leaving the sides of the pan. This should take about 8-10 minutes.
+
+Add the cardamom powder and chopped nuts to the mixture and mix well.
+
+Grease a square or rectangular tray with a little ghee.
+
+Transfer the mixture into the greased tray and spread it evenly using a spatula.
+
+If using saffron strands, you can garnish the top of the burfi with them for added flavor and a decorative touch.
+
+Let the burfi cool down for about 15-20 minutes at room temperature.
+
+Once it's slightly cooled down, cut it into desired shapes using a knife.
+
+Allow the burfi to cool completely before removing it from the tray.
+
+Your delicious homemade burfi is ready to be enjoyed! You can store it in an airtight container at room temperature for up to a week.
+
+<button class="searchbtn" onclick="burfi()">CLOSE</button>
+
+
+
+</div>
+<div id="popup6">
+    <h1>RASMALAI</h1>
+  <h3>  Ingredients:</h3>
+
+<h4>For the Paneer Balls (Rasgullas):</h4>
+
+4 cups whole milk
+2 tablespoons lemon juice
+1/4 cup sugar
+4 cups water
+<h4>For the Milk Syrup:</h4>
+
+4 cups whole milk
+1/2 cup sugar
+4-5 green cardamom pods, crushed
+A pinch of saffron strands (optional)
+Chopped pistachios or almonds for garnish
+<h3>Instructions:</h3>
+
+Start by making the paneer balls (rasgullas). Heat 4 cups of whole milk in a heavy-bottomed pan until it comes to a boil.
+
+Once the milk starts boiling, reduce the heat to low and add lemon juice gradually while stirring continuously. The milk will start to curdle.
+
+Continue to cook until the milk solids separate completely from the whey. Turn off the heat once you see a clear separation.
+
+Strain the curdled milk through a muslin cloth or a fine sieve. Rinse the paneer under cold water to remove the lemony flavor.
+
+Gather the edges of the cloth and squeeze out excess water from the paneer. Hang the cloth for about 30 minutes to drain any remaining water.
+
+After 30 minutes, transfer the paneer to a plate and knead it well until it becomes smooth and soft.
+
+Divide the paneer into small portions and roll them into smooth balls without any cracks.
+
+In a separate wide pan, add 4 cups of water and 1/4 cup of sugar. Bring it to a boil.
+
+Gently drop the paneer balls into the boiling sugar syrup. Cover and cook for about 15-20 minutes on medium heat. The paneer balls will double in size.
+
+Once cooked, turn off the heat and let them cool in the syrup for a while.
+
+Meanwhile, prepare the milk syrup. In another pan, heat 4 cups of whole milk over medium heat.
+
+Add sugar, crushed cardamom pods, and saffron strands (if using). Let the milk simmer until it reduces to about half its original volume, stirring occasionally.
+
+Once the milk has thickened, turn off the heat and let it cool slightly.
+
+Gently squeeze the excess syrup from the paneer balls and transfer them to the thickened milk (rabri).
+
+Allow the rasmalai to chill in the refrigerator for a few hours before serving.
+
+Garnish with chopped pistachios or almonds before serving.
+
+Your delicious homemade rasmalai is ready to be enjoyed!
+<button class="searchbtn" onclick="rasmalai()">CLOSE</button>
+
+
+
+
+
+</div>
+<div id="popup7">
+    <h1>RASGULLA</h1>
+    
+  <h3>  Ingredients:</h3>
+
+<h3>For the Paneer Balls (Rasgullas):</h3>
+
+1 liter full-fat milk
+2 tablespoons lemon juice or vinegar
+1 cup sugar
+4 cups water
+<h3>Instructions:</h3>
+
+Start by making the paneer. In a large heavy-bottomed pot, bring the milk to a boil over medium-high heat, stirring occasionally to prevent it from sticking to the bottom.
+
+Once the milk comes to a boil, reduce the heat to low and add the lemon juice or vinegar gradually while stirring continuously. The milk will curdle, and the whey will separate from the curdled milk solids (paneer).
+
+Once the milk has completely curdled and you see a clear separation of whey and curdled milk solids, turn off the heat.
+
+Line a large strainer or colander with a clean muslin cloth or cheesecloth. Pour the curdled milk through the cloth to strain out the whey.
+
+Rinse the paneer under cold running water to remove the sourness of the lemon juice or vinegar.
+
+Gather the edges of the cloth and squeeze out excess water from the paneer. Hang the cloth with the paneer for about 30 minutes to drain any remaining water.
+
+After 30 minutes, transfer the paneer to a large plate or bowl. Knead the paneer with the heel of your hand until it becomes smooth and soft. This process helps in making smooth rasgulla balls.
+
+Divide the paneer into small portions and roll them into smooth balls without any cracks. Make sure the balls are compact and smooth.
+
+In a wide pot, mix 1 cup of sugar with 4 cups of water and bring it to a boil over medium-high heat, stirring until the sugar dissolves completely.
+
+Gently drop the paneer balls into the boiling sugar syrup one by one. Cover the pot with a lid and let them cook for about 15-20 minutes on medium heat. The paneer balls will double in size.
+
+Once the paneer balls are cooked, turn off the heat and let them cool in the sugar syrup for a while.
+
+Rasgullas are ready to be served warm or chilled. You can store them in the refrigerator for up to 4-5 days. Enjoy these delicious homemade rasgullas as a sweet treat!
+
+Note: It's important to handle the paneer balls gently to prevent them from breaking while cooking. Also, the size of the rasgullas will increase while cooking, so make sure to leave some space in the pot for them to expand.
+
+<button class="searchbtn" onclick="rasgulla()">CLOSE</button>
+
+
+
+</div>
+<div id="popup8">
+   <h3> Ingredients:</h3>
+
+<h4>For the Gulab Jamun:</h4>
+
+1 cup milk powder
+1/4 cup all-purpose flour (maida)
+1/4 teaspoon baking soda
+2 tablespoons ghee or melted butter
+3-4 tablespoons milk (as needed to make the dough)
+Oil or ghee for deep frying
+For the Sugar Syrup (Chashni):
+
+2 cups sugar
+2 cups water
+4-5 green cardamom pods, crushed
+A few saffron strands (optional)
+1 teaspoon rose water or 1/2 teaspoon rose essence (optional)
+<h3>Instructions:</h3>
+
+Start by preparing the sugar syrup (chashni). In a saucepan, combine sugar and water. Place it over medium heat and stir until the sugar completely dissolves.
+
+Add crushed cardamom pods and saffron strands to the sugar syrup for flavor. You can also add rose water or rose essence for a fragrant touch. Let the syrup simmer for 5-7 minutes, then turn off the heat. Keep the sugar syrup warm.
+
+In a mixing bowl, combine milk powder, all-purpose flour, and baking soda. Mix well to ensure there are no lumps.
+
+Add ghee or melted butter to the dry ingredients and mix using your fingers until the mixture resembles breadcrumbs.
+
+Gradually add milk, a tablespoon at a time, and knead gently to form a soft dough. The dough should be smooth and slightly sticky. Be careful not to over-knead the dough.
+
+Divide the dough into small portions and roll them between your palms to form smooth, crack-free balls. Make sure there are no cracks on the surface of the balls.
+
+Heat oil or ghee in a deep pan over medium-low heat. The oil should be moderately hot, not too hot, to avoid burning the gulab jamuns.
+
+Gently slide the prepared dough balls into the hot oil, a few at a time, and fry them on low to medium heat. Stir occasionally to ensure even browning. Fry until they turn golden brown and evenly cooked from all sides. This should take about 8-10 minutes.
+
+Once the gulab jamuns are golden brown, remove them from the oil using a slotted spoon and drain excess oil by placing them on paper towels.
+
+Immediately transfer the hot fried gulab jamuns into the warm sugar syrup. Let them soak in the syrup for at least 1-2 hours to absorb the sweetness and flavors.
+
+Serve the gulab jamuns warm or at room temperature. You can garnish them with chopped nuts like pistachios or almonds for an extra crunch.
+
+Your delicious homemade gulab jamuns are ready to be enjoyed! 
+<button class="searchbtn" onclick="gulab()">CLOSE</button>
+    
+</div>
+<div id="popup9">
+    <h1>PASTA</h1>
+   <h3> Ingredients:</h3>
+
+8 oz (225g) spaghetti pasta
+2 tablespoons olive oil
+2 cloves garlic, minced
+1 can (14 oz/400g) crushed tomatoes
+1 teaspoon dried oregano
+Salt and pepper to taste
+Fresh basil leaves, torn
+Grated Parmesan cheese (optional, for serving)
+Instructions:
+
+<h4>Cook the Spaghetti:</h4> Bring a large pot of salted water to a boil. Add the spaghetti and cook according to package instructions until al dente (usually about 8-10 minutes). Drain the pasta, reserving about 1/2 cup of the pasta water.
+
+<h4>Prepare the Sauce:</h4> While the pasta is cooking, heat the olive oil in a large skillet over medium heat. Add the minced garlic and sauté for about 1 minute until fragrant, being careful not to let it brown.
+
+Add the crushed tomatoes and dried oregano to the skillet. Season with salt and pepper to taste. Allow the sauce to simmer for about 10-15 minutes, stirring occasionally, until it thickens slightly.
+
+<h4>Combine Pasta and Sauce:</h4> Add the cooked spaghetti to the skillet with the tomato sauce. Toss well to coat the pasta evenly with the sauce. If the sauce seems too thick, you can add some of the reserved pasta water to loosen it up.
+
+<h4>Serve:</h4> Transfer the spaghetti with tomato sauce to serving plates. Top with torn fresh basil leaves and grated Parmesan cheese, if desired.
+
+<h4>Enjoy:</h4> Serve hot and enjoy your delicious spaghetti with tomato sauce and basil!
+
+Feel free to customize this recipe by adding your favorite ingredients such as cooked Italian sausage, sautéed mushrooms, or diced bell peppers. You can also adjust the seasonings to suit your taste preferences.
+<button class="searchbtn" onclick="pasta()">CLOSE</button>
+</div>
+<div id="popup10">
+    <h1>PIZZA</h1>
+   <h3> Ingredients:</h3>
+<h3>For the Pizza Dough:</h3>
+
+2 1/4 teaspoons (1 packet) active dry yeast
+1 1/2 cups warm water (about 110°F or 45°C)
+3 1/2 cups all-purpose flour
+2 tablespoons olive oil
+1 teaspoon salt
+1 teaspoon sugar
+<h3>For the Pizza Toppings:</h3>
+
+1 cup pizza sauce (homemade or store-bought)
+2 cups shredded mozzarella cheese
+Your favorite toppings (pepperoni, sliced bell peppers, onions, mushrooms, olives, etc.)
+Fresh basil leaves (optional, for garnish)
+Grated Parmesan cheese (optional, for garnish)
+Red pepper flakes (optional, for garnish)
+Instructions:
+
+<h4>1. Prepare the Pizza Dough:</h4>
+
+In a small bowl, combine the warm water, sugar, and yeast. Let it sit for about 5-10 minutes until the mixture becomes frothy.
+
+In a large mixing bowl, combine the flour and salt. Make a well in the center and pour in the yeast mixture and olive oil.
+
+ in a warm place for about 1-2 hours until doubled in size.
+
+<h4>2. Preheat the Oven:</h4>
+
+Preheat your oven to 475°F (245°C). If you have a pizza stone, place it in the oven while preheating.
+<h4>3. Roll Out the Dough:</h4>
+
+Once the dough has risen, punch it down and divide it into two equal portions (for two 12-inch pizzas). Roll out each portion of dough on a floured surface into a circle or rectangle, depending on your preference and the shape of your baking sheet or pizza stone.
+
+
+<h4>4. Bake the Pizza:</h4>
+
+Transfer the assembled pizza to the preheated oven. If using a baking sheet, place it on the middle rack. If using a pizza stone, carefully slide the pizza onto the hot stone using a pizza peel.
+
+
+
+
+
+    <button class="searchbtn" onclick="pizza()">CLOSE</button>
+</div>
+<div id="popup11">
+  <h3>  Ingredients:</h3>
+
+4 slices of bread (white, whole wheat, or sourdough)
+1 1/2 cups shredded cheese (such as cheddar, mozzarella, or Swiss)
+2 tablespoons butter, softened
+Optional add-ins: sliced tomatoes, cooked bacon or ham, caramelized onions, spinach leaves, etc.
+Instructions:
+
+<h4>Prepare the Ingredients:</h4>
+
+If using any add-ins like tomatoes or onions, prepare them by slicing or cooking them as needed.
+<h4>Assemble the Sandwich:</h4>
+
+Place two slices of bread on a clean surface. Divide the shredded cheese evenly between the two slices, spreading it out to cover the bread.
+
+Add any desired add-ins on top of the cheese layer.
+
+Place the remaining two slices of bread on top to form sandwiches.
+
+<h4>Butter the Bread:</h4>
+
+Spread a thin layer of softened butter on one side of each sandwich. Make sure to cover the entire surface.
+Cook the Sandwich:
+
+Heat a skillet or griddle over medium heat. Once hot, place the sandwiches butter-side down on the skillet.
+
+Cook for 3-4 minutes on one side until golden brown and crispy.
+
+Carefully flip the sandwiches using a spatula, and cook for an additional 3-4 minutes on the other side until the cheese is melted and the bread is golden brown and crispy.
+Feel free to customize this recipe by using different types of cheese, bread, or add-ins to suit your taste preferences. Enjoy your delicious homemade grilled cheese sandwiches!
+
+
+
+
+
+    <button class="searchbtn" onclick="sandwich()">CLOSE</button>
+
+</div>
+<div id="popup12">
+    <h1>BURGIR</h1>
+  <h3>  Ingredients:</h3>
+
+<h4>For the Burger Patties:</h4>
+
+1 lb (450g) ground beef (you can also use ground turkey, chicken, or a plant-based alternative)
+1 small onion, finely chopped
+2 cloves garlic, minced
+1/2 teaspoon salt
+1/4 teaspoon black pepper
+1 tablespoon Worcestershire sauce (optional)
+1 tablespoon olive oil (if using lean meat)
+<h4>For Assembling the Burgers:</h4>
+
+Burger buns
+Lettuce leaves
+Sliced tomatoes
+Sliced onions
+Pickles
+Cheese slices (optional)
+Ketchup, mustard, mayonnaise, or other condiments of your choice
+Instructions:
+
+<h4>1. Prepare the Burger Patties:</h4>
+
+In a large mixing bowl, combine the ground beef, finely chopped onion, minced garlic, salt, pepper, and Worcestershire sauce (if using). Use your hands to mix the ingredients until well combined, but avoid overmixing to keep the patties tender.
+
+Divide the mixture into equal portions and shape them into patties of your desired size and thickness. Make sure the patties are slightly larger than the size of your burger buns, as they will shrink a bit during cooking.
+
+<h4>2. Cook the Burger Patties:</h4>
+
+Heat a grill pan, skillet, or barbecue grill over medium-high heat. If using a skillet, add olive oil to prevent sticking.
+
+Once the pan or grill is hot, add the burger patties. Cook for about 4-5 minutes on each side for medium doneness, or adjust the cooking time according to your preference for doneness.
+
+If adding cheese slices, place them on top of the patties during the last minute of cooking to allow them to melt.
+
+<h4>3. Assemble the Burgers:</h4>
+
+While the patties are cooking, lightly toast the burger buns on the grill or in a toaster until golden brown.
+
+Once the patties are cooked to your liking, remove them from the heat and let them rest for a minute.
+
+To assemble the burgers, place a lettuce leaf on the bottom half of each bun, followed by a burger patty.
+
+Add sliced tomatoes, onions, pickles, and any other toppings of your choice.
+
+<button class="searchbtn" onclick="burgir()">CLOSE</button>
+    
+   
+
+</div>
+
+<div id="popup13">
+    <h1>ALOO GOBHI</h1>
+
+   <h3> Ingredients:</h3>
+
+1 medium cauliflower, cut into florets
+2 medium potatoes, peeled and cubed
+2 tablespoons oil or ghee
+1 teaspoon cumin seeds
+1 onion, finely chopped
+2 tomatoes, finely chopped
+1 teaspoon ginger paste
+1 teaspoon garlic paste
+1 green chili, finely chopped (optional)
+1/2 teaspoon turmeric powder
+1 teaspoon ground coriander
+1/2 teaspoon cumin powder
+1/2 teaspoon garam masala
+Salt to taste
+Fresh cilantro leaves, chopped (for garnish)
+Instructions:
+
+<h4>Prepare the Vegetables:</h4>
+
+Wash the cauliflower florets and potatoes thoroughly. Cut the cauliflower into medium-sized florets and peel and cube the potatoes. Keep them aside.
+<h4>Cook the Aloo Gobi:</h4>
+
+Heat oil or ghee in a large pan or skillet over medium heat. Add the cumin seeds and let them splutter.
+
+Add the finely chopped onions to the pan and sauté until they turn translucent.
+
+Add the ginger paste, garlic paste, and green chili (if using). Sauté for another minute until the raw smell disappears.
+
+Now, add the chopped tomatoes to the pan and cook until they become soft and mushy.
+
+Add the turmeric powder, ground coriander, cumin powder, and garam masala to the pan. Mix well and cook for 2-3 minutes until the spices are fragrant.
+
+Add the cauliflower florets and cubed potatoes to the pan. Stir to coat the vegetables with the spices.
+
+Cover the pan and cook the aloo gobi over medium-low heat for about 15-20 minutes, stirring occasionally. Cook until the vegetables are tender but not mushy.
+
+
+
+
+
+    <button class="searchbtn" onclick="gobhi()">CLOSE</button>
+</div>
+<div id="popup14">
+    <h1>BHINDI</h1>
+   <h3> Ingredients:</h3>
+
+500g okra (bhindi), washed and dried
+2 tablespoons oil
+1 teaspoon cumin seeds
+1 onion, finely chopped
+2 tomatoes, finely chopped
+2 teaspoons ginger-garlic paste
+1 green chili, slit lengthwise (optional)
+1 teaspoon coriander powder
+1/2 teaspoon cumin powder
+1/2 teaspoon turmeric powder
+1/2 teaspoon red chili powder (adjust to taste)
+Salt to taste
+Fresh coriander leaves, chopped (for garnish)
+Lemon wedges (for serving)
+<h3>Instructions:</h3>
+
+<h4>Prepare the Okra (Bhindi):</h4>
+
+Wash the okra thoroughly and pat them dry using a kitchen towel or paper towel.
+Trim the ends of the okra and slice them into pieces about 1-inch long. You can also slit them lengthwise if you prefer.
+Cook the Bhindi:
+
+Heat oil in a large pan or skillet over medium heat. Add the cumin seeds and let them splutter.
+Add the finely chopped onions to the pan and sauté until they turn translucent.
+Add the ginger-garlic paste and slit green chili (if using). Sauté for another minute until the raw smell disappears.
+Add the chopped tomatoes to the pan and cook until they become soft and mushy.
+Now, add the coriander powder, cumin powder, turmeric powder, red chili powder, and salt to the pan. Mix well and cook for 2-3 minutes until the spices are fragrant.
+Add the sliced okra to the pan and stir to coat them with the spices. Cover the pan and cook the bhindi over medium-low heat for about 15-20 minutes, stirring occasionally. Cook until the okra is tender but not mushy.
+
+<button class="searchbtn" onclick="bhindi()">CLOSE</button>
+
+</div>
+<div id="popup15">
+   <h3> Ingredients:</h3>
+
+1 cup whole black lentils (urad dal)
+1/4 cup red kidney beans (rajma)
+4 cups water (for soaking)
+3 tablespoons butter or ghee
+1 medium onion, finely chopped
+2 teaspoons ginger-garlic paste
+2 green chilies, slit lengthwise
+2 large tomatoes, pureed
+1 teaspoon red chili powder
+1 teaspoon ground cumin
+1 teaspoon ground coriander
+1/2 teaspoon turmeric powder
+1/2 cup heavy cream
+Salt to taste
+Chopped fresh cilantro leaves for garnish
+<h3>For Tempering (Tadka):</h3>
+
+2 tablespoons butter or ghee
+1 teaspoon cumin seeds
+1 teaspoon kasuri methi (dried fenugreek leaves), crushed (optional)
+Instructions:
+
+<h4>1. Prepare the Lentils:</h4>
+
+Rinse the black lentils (urad dal) and kidney beans (rajma) under cold water until the water runs clear.
+In a large bowl, soak the lentils and kidney beans in enough water to cover them completely. Let them soak for at least 6 hours or overnight.
+<h4>2. Cook the Lentils:</h4>
+
+Drain the soaked lentils and kidney beans and transfer them to a pressure cooker or large pot.
+Add 4 cups of water, along with a pinch of salt. Pressure cook for about 6-7 whistles or until the lentils and kidney beans are soft and cooked through. If using a pot, cook until they are tender, which may take about 45-50 minutes.
+<h4>3. Prepare the Dal Makhani:</h4>
+
+Heat butter or ghee in a large skillet or pan over medium heat. Add cinnamon stick, green cardamom pods, and cloves. Sauté for a minute until fragrant.
+Add the finely chopped onion and sauté until golden brown.
+Stir in the ginger-garlic paste and green chilies. Cook for another minute.
+Add the pureed tomatoes to the skillet and cook until the oil starts to separate from the tomatoes.
+Reduce the heat to low and add the red chili powder, ground cumin, ground coriander, and turmeric powder. Cook for 2-3 minutes, stirring continuously.
+Pour in the cooked lentils and kidney beans along with any remaining water from the pressure cooker or pot. Stir well to combine.
+Simmer the dal makhani on low heat for about 20-30 minutes, stirring occasionally, until it thickens and the flavors meld together.
+
+
+
+
+
+    <button class="searchbtn" onclick="makhani()">CLOSE</button>
+
+</div>
+<div id="popup16">
+   <h3></h3>
+
+<h4>For the Tofu Marinade:</h4>
+
+14 oz (400g) firm tofu, pressed and cubed
+1/2 cup plain yogurt (or dairy-free yogurt for a vegan option)
+2 tablespoons lemon juice
+2 teaspoons ginger-garlic paste
+1 teaspoon ground cumin
+1 teaspoon ground coriander
+1/2 teaspoon turmeric powder
+1/2 teaspoon paprika or Kashmiri red chili powder (for color)
+Salt to taste
+2 tablespoons oil for frying
+<h4>For the Tikka Masala Sauce:</h4>
+
+2 tablespoons oil or ghee (for a non-vegan option)
+1 onion, finely chopped
+2 teaspoons ginger-garlic paste
+2 green chilies, slit lengthwise (optional)
+1 cup tomato puree or canned crushed tomatoes
+1 teaspoon ground cumin
+1 teaspoon ground coriander
+1/2 teaspoon turmeric powder
+1 teaspoon garam masala
+1/2 cup heavy cream (or coconut cream for a vegan option)
+Salt to taste
+Chopped fresh cilantro leaves for garnish
+Instructions:
+
+<h4>1. Marinate the Tofu:</h4>
+
+In a bowl, combine yogurt, lemon juice, ginger-garlic paste, ground cumin, ground coriander, turmeric powder, paprika or chili powder, and salt to taste. Mix well to make the marinade.
+Add the cubed tofu to the marinade and gently toss until the tofu is well coated. Cover and let it marinate for at least 30 minutes, or up to 2 hours in the refrigerator.
+<h4>2. Cook the Marinated Tofu:</h4>
+
+Heat 2 tablespoons of oil in a large skillet or non-stick pan over medium heat.
+Once the oil is hot, add the marinated tofu cubes in a single layer, making sure not to overcrowd the pan. Cook for 3-4 minutes on each side, or until the tofu is golden brown and crispy. Remove the tofu from the pan and set aside.
+<h4>3. Prepare the Tikka Masala Sauce:</h4>
+
+In the same skillet, add 2 tablespoons of oil or ghee. Add the finely chopped onion and sauté until golden brown.
+Stir in the ginger-garlic paste and slit green chilies (if using). Sauté for another minute until fragrant.
+Add the tomato puree or crushed tomatoes to the skillet and cook for 2-3 minutes.
+Stir in the ground cumin, ground coriander, turmeric powder, and garam masala. Cook for another 2-3 minutes, stirring continuously.
+Pour in the heavy cream or coconut cream and mix well. Allow the sauce to simmer for 5-7 minutes until it thickens slightly.
+Season the sauce with salt to taste.
+
+
+
+
+
+
+    <button class="searchbtn" onclick="tofu()">CLOSE</button>
+
+</div>
+<div id="popup17">
+  <h3>  Ingredients:</h3>
+
+1 lb (450g) mushrooms (button mushrooms, cremini mushrooms, or your preferred variety), cleaned and sliced
+3 tablespoons butter
+3 cloves garlic, minced
+2 tablespoons fresh parsley, chopped (optional)
+Salt and pepper to taste
+Lemon wedges (optional, for serving)
+Instructions:
+
+<h4>Prepare the Mushrooms:</h4>
+
+Clean the mushrooms by wiping them with a damp paper towel to remove any dirt. Trim the stems if necessary, and slice them into uniform pieces.
+<h4>Cook the Mushrooms:</h4>
+
+Heat a large skillet over medium heat and add the butter. Once the butter has melted, add the minced garlic to the skillet and sauté for about 1 minute until fragrant.
+Add the sliced mushrooms to the skillet, spreading them out into a single layer. Allow the mushrooms to cook undisturbed for a few minutes until they start to release their moisture.
+Stir the mushrooms occasionally and continue to cook for about 5-7 minutes until they are golden brown and tender. The cooking time may vary depending on the size and type of mushrooms.
+Season the mushrooms with salt and pepper to taste. If using, sprinkle chopped fresh parsley over the mushrooms and toss to combine.
+<h4>Serve:</h4>
+
+Transfer the garlic butter mushrooms to a serving dish.
+Serve hot as a side dish or as a topping for steak, chicken, pasta, or toast.
+Optionally, squeeze fresh lemon juice over the mushrooms just before serving for a burst of brightness.
+Enjoy your flavorful and aromatic Garlic Butter Mushrooms! They make a versatile and delicious addition to any meal. Feel free to adjust the seasoning and add your favorite herbs or spices to customize the flavor to your liking.
+
+
+
+
+
+    <button class="searchbtn" onclick="mushroom()">CLOSE</button>
+</div>
+<div id="popup18">
+    <h3>Ingredients:</h3>
+
+1 cup yogurt (plain, full-fat)
+2 tablespoons gram flour (besan)
+2 cups water
+1 tablespoon oil or ghee
+1 teaspoon mustard seeds
+1 teaspoon cumin seeds
+1 dried red chili
+1/2 teaspoon fenugreek seeds (optional)
+1/2 teaspoon turmeric powder
+1/2 teaspoon red chili powder (optional)
+Salt to taste
+1-2 green chilies, slit lengthwise
+Fresh cilantro leaves for garnish
+<h3>Instruction:</h3>
+
+In a bowl, whisk together yogurt and gram flour until smooth. Gradually add water while whisking to form a thin, lump-free mixture.
+
+Heat oil or ghee in a pan over medium heat. Add mustard seeds, cumin seeds, dried red chili, and fenugreek seeds (if using). Let them splutter and become aromatic.
+
+Pour the yogurt mixture into the pan. Add turmeric powder, red chili powder (if using), salt, and green chilies. Stir well to combine.
+
+Bring the kadhi to a gentle boil, then reduce the heat to low and simmer for 15-20 minutes, stirring occasionally, until the kadhi thickens slightly and the raw taste of gram flour disappears.
+
+Taste and adjust seasoning if needed. Remove from heat.
+
+Garnish with fresh cilantro leaves before serving.
+
+Serve hot with steamed rice or roti.
+
+Enjoy your delicious and comforting Kadhi!
+
+
+
+
+
+    <button class="searchbtn" onclick="kadhi()">CLOSE</button>
+</div>
+<div id="popup19">
+   <h3> Ingredients:</h3>
+
+1 cup dried red kidney beans (rajma), soaked overnight or for at least 8 hours
+2 tablespoons oil or ghee
+1 onion, finely chopped
+2 tomatoes, finely chopped
+2 teaspoons ginger-garlic paste
+1-2 green chilies, slit lengthwise (optional)
+1 teaspoon cumin seeds
+1 teaspoon ground coriander
+1/2 teaspoon turmeric powder
+1 teaspoon red chili powder (adjust to taste)
+1 teaspoon garam masala
+Salt to taste
+Chopped fresh cilantro leaves for garnish
+<h3>Instructions:</h3>
+
+Drain the soaked kidney beans and rinse them under cold water.
+
+In a pressure cooker or large pot, heat oil or ghee over medium heat. Add cumin seeds and let them splutter.
+
+Add chopped onions and sauté until they turn golden brown.
+
+Add ginger-garlic paste and green chilies (if using). Sauté for another minute.
+
+Add chopped tomatoes and cook until they become soft and mushy.
+
+Stir in ground coriander, turmeric powder, red chili powder, and salt. Cook for a few minutes until the spices are fragrant.
+
+Add the soaked kidney beans to the pot and mix well with the spices and onion-tomato mixture.
+
+Pour in enough water to cover the kidney beans (about 3-4 cups).
+
+If using a pressure cooker, cover with the lid and cook for about 15-20 minutes or until the kidney beans are soft and cooked through. If using a pot, cover with a lid and cook for about 45-50 minutes or until the kidney beans are tender.
+
+Once the kidney beans are cooked, stir in garam masala and cook for an additional 2-3 minutes.
+
+Garnish with chopped fresh cilantro leaves.
+
+Serve hot with steamed rice or roti.
+
+Enjoy your flavorful and hearty Rajma! Adjust the spice levels according to your taste preferences.
+
+
+
+
+
+    <button class="searchbtn" onclick="rajma()">CLOSE</button>
+</div>
+<div id="popup20">
+   <h3> Ingredients:</h3>
+
+200g paneer, cubed
+2 tablespoons oil or ghee
+1 onion, finely chopped
+2 tomatoes, finely chopped
+1 green chili, finely chopped (optional)
+1 teaspoon ginger-garlic paste
+1/2 teaspoon cumin seeds
+1/2 teaspoon turmeric powder
+1 teaspoon red chili powder
+1 teaspoon ground coriander
+1/2 teaspoon garam masala
+Salt to taste
+2 tablespoons cream
+Chopped fresh cilantro leaves for garnish
+<h3>Instructions:</h3>
+
+Heat oil or ghee in a pan over medium heat. Add cumin seeds and let them splutter.
+
+Add chopped onions and sauté until they turn golden brown.
+
+Stir in ginger-garlic paste and chopped green chili (if using). Sauté for another minute until fragrant.
+
+Add chopped tomatoes to the pan and cook until they become soft and mushy.
+
+Mix in turmeric powder, red chili powder, ground coriander, garam masala, and salt. Cook for a few minutes until the spices are fragrant.
+
+Add cream to the pan and stir well to combine with the onion-tomato mixture.
+
+Add paneer cubes to the pan and gently mix them with the gravy.
+
+Cook for another 3-4 minutes until the paneer is heated through and the gravy thickens slightly.
+
+Garnish with chopped fresh cilantro leaves.
+
+Serve hot with roti, naan, or rice.
+
+Enjoy your creamy and delicious Paneer Lababdar! Adjust the spice levels according to your taste preferences.
+
+
+
+
+
+    <button class="searchbtn" onclick="lababdar()">CLOSE</button>
+</div>
+<div id="popup21">
+   <h3> Ingredients:</h3>
+
+4 slices of bread (white or whole wheat)
+4 slices of ham
+4 slices of cheese (Gruyère or Swiss cheese are traditional, but you can use any melting cheese)
+2 tablespoons butter
+2 tablespoons all-purpose flour
+1 cup milk
+1/4 teaspoon nutmeg (optional)
+Salt and pepper to taste
+<h3>Instructions:</h3>
+
+Preheat your oven to 375°F (190°C).
+
+<h4>To make the béchamel sauce:</h4>
+
+In a small saucepan, melt the butter over medium heat.
+Once melted, add the flour and whisk continuously for about 1-2 minutes to make a roux (a thick paste).
+Slowly pour in the milk while whisking constantly to prevent lumps from forming.
+Cook the sauce for a few minutes until it thickens and coats the back of a spoon.
+Season the sauce with nutmeg (if using), salt, and pepper. Remove from heat and set aside.
+<h4>Assemble the Croque-Monsieur:</h4>
+
+Place the bread slices on a baking sheet lined with parchment paper.
+Place a slice of ham on each bread slice.
+Spoon a generous amount of béchamel sauce over the ham, spreading it evenly.
+Top each slice with a slice of cheese.
+<h4>Bake the Croque-Monsieur:</h4>
+
+Transfer the baking sheet to the preheated oven and bake for about 10-15 minutes, or until the cheese is melted and bubbly, and the edges of the bread are golden brown.
+<h4>Serve:</h4>
+
+Remove the Croque-Monsieur from the oven and let them cool for a minute or two.
+Cut each toast diagonally and serve hot.
+Enjoy your delicious French Savory Toast (Croque-Monsieur)! It makes a satisfying and comforting meal for breakfast, brunch, or lunch.
+
+
+
+
+
+    <button class="searchbtn" onclick="toast()">CLOSE</button>
+</div>
+<div id="popup22">
+   <h3> Ingredients:</h3>
+
+1 cup poha (flattened rice)
+1 tablespoon oil
+1 teaspoon mustard seeds
+1 teaspoon cumin seeds
+1 onion, finely chopped
+1 potato, peeled and diced (optional)
+1 green chili, finely chopped (optional)
+1/2 teaspoon turmeric powder
+Salt to taste
+Juice of 1 lemon
+Fresh cilantro leaves for garnish
+<h3>Instructions:</h3>
+
+Rinse the poha under cold water in a sieve or colander for a few seconds. Drain well and set aside.
+
+Heat oil in a pan over medium heat. Add mustard seeds and cumin seeds, and let them splutter.
+
+Add chopped onion, diced potato (if using), and chopped green chili (if using). Sauté until the onions turn translucent and the potatoes are cooked through.
+
+Add turmeric powder and salt to the pan, and mix well with the onion-potato mixture.
+
+Add the rinsed and drained poha to the pan. Gently mix everything together until the poha is well coated with the turmeric mixture.
+
+Cover the pan and cook for 3-4 minutes on low heat, allowing the flavors to blend together.
+
+Remove the lid and drizzle lemon juice over the poha. Gently mix to combine.
+
+Garnish with fresh cilantro leaves.
+
+Serve hot as is or with a side of chutney or yogurt.
+
+Enjoy your quick and delicious Poha breakfast! Adjust the seasoning and add your favorite toppings like peanuts, grated coconut, or chopped tomatoes for extra flavor and texture.
+
+
+
+
+
+    <button class="searchbtn" onclick="poha()">CLOSE</button>
+</div>
+<div id="popup23">
+   <h3> Ingredients for Idli:</h3>
+
+1 cup idli rice
+1/2 cup urad dal (black gram lentils)
+Salt to taste
+Water as needed
+<h3>Ingredients for Sambhar:</h3>
+
+1 cup tuvar dal (split pigeon peas)
+1 small onion, chopped
+1 small tomato, chopped
+1 carrot, chopped
+1/2 cup chopped mixed vegetables (such as beans, peas, or bell pepper)
+2 tablespoons sambhar powder
+1/2 teaspoon turmeric powder
+1 teaspoon tamarind paste
+Salt to taste
+Water as needed
+1 tablespoon oil or ghee
+1/2 teaspoon mustard seeds
+A pinch of asafoetida (hing)
+Few curry leaves
+Chopped fresh coriander leaves for garnish
+Instructions:
+
+<h3>For Idli:</h3>
+
+Rinse the idli rice and urad dal separately under cold water.
+
+Soak the rice and urad dal in separate bowls with enough water for 4-6 hours or overnight.
+
+Drain the water from the rice and dal. Grind them separately to a smooth paste using a little water if needed.
+
+Mix the ground rice and dal together in a bowl. Add salt to taste and mix well. Allow the batter to ferment overnight or for 8-10 hours in a warm place.
+
+Grease the idli molds with oil and pour the batter into each mold.
+
+Steam the idlis in a steamer for about 10-12 minutes or until they are cooked through. Remove from heat and let them cool slightly before unmolding.
+
+<h3>For Sambhar:</h3>
+
+Cook the tuvar dal in a pressure cooker with water until soft and mushy. Set aside.
+
+Heat oil or ghee in a pan over medium heat. Add mustard seeds and let them splutter.
+
+Add asafoetida and curry leaves, followed by chopped onions. Sauté until onions turn golden brown.
+
+Add chopped tomatoes, mixed vegetables, sambhar powder, turmeric powder, and salt. Cook until the vegetables are tender.
+
+Add the cooked tuvar dal to the pan along with tamarind paste and water to adjust the consistency. Bring the sambhar to a boil and simmer for a few minutes.
+
+Garnish with chopped fresh coriander leaves.
+
+<h3>To Serve:</h3>
+
+Serve the hot idlis with warm sambhar.
+
+Enjoy your delicious Idli Sambhar! Adjust the consistency of the sambhar according to your preference by adding more or less water.
+    <button class="searchbtn" onclick="idli()">CLOSE</button>
+</div>
+<div id="popup24">
+  <h4>  Ingredients for Dosa Batter:</h4>
+
+1 cup parboiled rice
+1/2 cup urad dal (black gram lentils)
+1/4 teaspoon fenugreek seeds
+Salt to taste
+Water as needed
+<h4>Ingredients for Masala Filling:</h4>
+
+2 large potatoes, boiled, peeled, and mashed
+1 onion, finely chopped
+1 green chili, finely chopped
+1/2 teaspoon mustard seeds
+1/2 teaspoon cumin seeds
+A pinch of asafoetida (hing)
+1/2 teaspoon turmeric powder
+Salt to taste
+Fresh cilantro leaves, chopped
+Oil or ghee for cooking
+Instructions:
+
+<h4>For Dosa Batter:</h4>
+
+Rinse the parboiled rice, urad dal, and fenugreek seeds separately under cold water.
+
+Soak the rice and dal along with fenugreek seeds in separate bowls with enough water for 4-6 hours or overnight.
+
+Drain the water from the rice and dal. Grind them separately to a smooth paste using a little water if needed.
+
+Mix the ground rice and dal together in a bowl. Add salt to taste and mix well. Allow the batter to ferment overnight or for 8-10 hours in a warm place.
+
+<h4>For Masala Filling:</h4>
+
+Heat oil or ghee in a pan over medium heat. Add mustard seeds and let them splutter.
+
+Add cumin seeds and asafoetida, followed by chopped onions and green chili. Sauté until onions turn golden brown.
+
+Add turmeric powder and salt. Mix well.
+
+Add mashed potatoes to the pan and mix until well combined with the onion mixture. Cook for a few minutes until heated through.
+
+Garnish with chopped fresh cilantro leaves.
+
+<h4>To Make Masala Dosa:</h4>
+
+Heat a non-stick pan or a cast-iron griddle (tawa) over medium heat. Grease the surface lightly with oil.
+
+Pour a ladleful of dosa batter onto the center of the hot tawa and spread it evenly in a circular motion to form a thin layer.
+
+Drizzle a little oil or ghee around the edges of the dosa. Cook until the underside is golden brown and crisp.
+
+Spoon some of the prepared masala filling onto one half of the dosa.
+
+Carefully fold the other half of the dosa over the filling to form a semi-circle or roll it up into a cylinder.
+
+Cook for another minute or two until the dosa is crisp and golden brown on both sides.
+
+Serve hot with coconut chutney and sambar.
+
+Enjoy your delicious Masala Dosa! Adjust the thickness of the dosa according to your preference by spreading the batter thinly or thickly on the tawa.
+
+
+
+
+
+    <button class="searchbtn" onclick="dosa()">CLOSE</button>
+</div>
+<button class="searchbtn" id="photo"><a href="photo.html">UPLOAD PHOTO OF YOUR DISH</a></button>
+
+
+
+
+<script src="index.js"></script>   
+</body>
+</html>
